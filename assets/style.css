@@ -1,9 +1,8 @@
 :root {
-  --text: #e02c9b;
+  --text: rgb(224, 103, 228);
   --background: #40434d;
+  --light: #dde4eb;
 }
-
-
 
 * {
   margin: 0;
@@ -15,26 +14,76 @@ body {
 }
 
 header {
-  font-size: 25px;
+  font-size: 35px;
   color: var(--text);
   text-align: center;
   margin: 2%;
   
 }
-
+main{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
 summary {
   font-size: 18px;
+  color: aliceblue;
+  align-items: center;
+  margin: 2%;
 }
 
 h2{
   color: var(--text);
+  border: var(--light) solid 1px;
+  position:relative;
+  margin-top: -20px;
+  margin-left: 125px;
+  background-color: var(--background);
+  border-radius: 5px;
+  text-align: center;
+  width: 250px;
+  padding: 2%;
+
+}
+
+.snippet {
+  border: aliceblue dashed ;
+  border-radius: 1px;
+  width: 30%;
+  margin: 10px;
+}
+
+.snippet p{
+  color: var(--text);
+  margin: 2%;
+  
 }
 
 pre {
   font-family: monospace;
+  color: aliceblue;
+  margin: 2%;
+  background-image: linear-gradient(#e866ec4d 0%,#e866ec99 100%);
+  border-radius: 10px ;
 }
 
+footer{
+  color: var(--text);
+  bottom: 0;
+  position: initial;
+  text-align: center;
+  width: 100%;
+  margin: 20px;
+}
 
-@media screen and (max-width: 992px) {}
+@media screen and (max-width: 992px) {
+  .snippet{
+    width: 45%;
+  }
+}
 
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+  .snippet{
+    width: 90%;
+  }
+}
